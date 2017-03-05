@@ -14,8 +14,8 @@ let g:loaded_vimtask2 = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=0 MyTaskToggle call vimtask#toggle(getline("."))
-command! -nargs=* MakeTODO call vimtask#make(<f-args>)
+command! -nargs=0 MyTaskToggle call vimtask2#toggle(getline("."))
+command! -nargs=* MakeTODO call vimtask2#make(<f-args>)
 noremap td :MyTaskToggle<CR>
 
 let &cpo = s:save_cpo

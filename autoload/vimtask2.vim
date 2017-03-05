@@ -14,7 +14,7 @@ let g:loaded_vimtask2 = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! vimtask#toggle(line)
+function! vimtask2#toggle(line)
   if a:line =~ '^.*\s*\[D\]'
     call setline('.', substitute(a:line, '\[D\]<.*>', '[ ]', ''))
   else
@@ -22,7 +22,7 @@ function! vimtask#toggle(line)
   endif
 endfunction
 
-function! vimtask#make(...)
+function! vimtask2#make(...)
   call append('.', a:1.' [ ] '.a:2)
 endfunction
 
