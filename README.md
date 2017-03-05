@@ -2,11 +2,17 @@
 
 
 ## installation
+Add your `.vimrc` or `$XDG_CONFIG_HOME/nvim/init.vim`  
+if you use `neobundle.vim`
 ```vim
-NeoBundle "NoahOrberg/vimtask2.vim"
+NeoBundle 'NoahOrberg/vimtask2.vim'
+```
+if you use `dein.vim`
+```vim
+call dein#add('NoahOrberg/vimtask2.vim')
 ```
 
-## Usage
+## usage
 - Make TODO-ITEM
 ```vim
 :MakeTODO {COMMENT MARKER} {TODO_ITEM}
